@@ -1,3 +1,16 @@
-body {
-  background: red;
-}
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/content-text";
+@import "blocks/content-title";
+@import "blocks/intro";
+@import "blocks/main";
+@import "blocks/search";
+@import "blocks/title";
+@import "blocks/tips";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/menu";
+@import "blocks/social";
+@import "blocks/developer";

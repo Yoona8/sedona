@@ -1,13 +1,15 @@
 .intro {
   position: relative;
-  height: 388px;
+  height: 158px;
+  background-color: $bg-blue;
+  background-image: url('../../img/text-sedona.svg'), url('../../img/bg-back-mobile@1x.jpg');
+  background-position: center;
+  background-size: 280px auto, auto;
+  background-repeat: no-repeat;
 
   &--index {
-    background-color: $bg-blue;
+    height: 388px;
     background-image: url('../../img/text-sedona-index.svg'), url('../../img/bg-back-mobile@1x.jpg');
-    background-position: center, center;
-    background-size: 280px auto, auto;
-    background-repeat: no-repeat;
   }
 
   &::after {

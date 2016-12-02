@@ -3,9 +3,10 @@ html {
 }
 
 body {
-  @include ptsans();
+  width: 320px;
   font-size: 1.4rem;
   line-height: 1.5;
+  @include ptsans();
 }
 
 h1,
@@ -16,4 +17,8 @@ h5,
 h6 {
   margin-top: 0;
   font-style: normal;
+}
+
+.visually-hidden {
+  display: none;
 }

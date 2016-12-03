@@ -1,0 +1,11 @@
+.attractions {
+  background-color: $bg-lightgray;
+
+  &--pic {
+    background-color: $bg-blue;
+  }
+}
+
+.attractions__item {
+  padding: 0 20px;
+}

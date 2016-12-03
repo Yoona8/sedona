@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="logo">
-          <img class="logo__img" src="#" width="" height="" alt="Sedona">
-        </div>
-        <nav class="nav">
-          <a class="nav__toggle" href="#">Открыть</a>
+      <div class="logo">
+        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+      </div>
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <button class="nav__toggle" type="button">Открыть</button>
           <button class="nav__close" type="button">Закрыть</button>
           <ul class="nav__list">
             <li class="nav__item nav__item--current"><a class="nav__link">Главная</a></li>
@@ -19,88 +20,90 @@
             <li class="nav__item"><a class="nav__link" href="form-feedback.html">Форма отзыва</a></li>
             <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
-        </nav>
-        <div class="intro intro--index">
-          <img class="intro__img" src="#" width="" height="" alt="Sedona">
         </div>
+      </nav>
+      <div class="intro intro--index">
+        <h1 class="intro__title visually-hidden">Седона</h1>
       </div>
     </header>
     <main class="main">
-      <div class="main__container">
-        <section class="title title--index">
-          <h1 class="content-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <section class="title title--index">
+        <div class="title__wrapper">
+          <h2 class="content-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="content-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
-        <section class="attractions attractions--pic">
-          <div class="attractions__item">
-            <h2 class="content-title">Настоящий городок</h2>
-            <p class="content-text">&ndash; №1 &ndash;</p>
-            <p class="content-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="attractions__pic">
-            <img class="attractions__img" src="#" width="" height="" alt="Sedona">
-          </div>
-        </section>
-        <section class="tips">
-          <div class="tips__item tips__item--house">
-            <h2 class="content-title">Жилье</h2>
-            <p class="content-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-          <div class="tips__item tips__item--gift">
-            <h2 class="content-title">Сувениры</h2>
-            <p class="content-text">Не только китайского, но и местного производства!</p>
-          </div>
-          <div class="tips__item tips__item--food">
-            <h2 class="content-title">Еда</h2>
-            <p class="content-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-        </section>
-        <section class="attractions attractions--pic">
-          <div class="attractions__item">
-            <h2 class="content-title">Там есть мост дьявола</h2>
-            <p class="content-text">&ndash; №2 &ndash;</p>
-            <p class="content-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-          <div class="attractions__pic">
-            <img class="attractions__img" src="#" width="" height="" alt="Sedona">
-          </div>
-        </section>
-        <section class="attractions">
-          <div class="attractions__item">
-            <h2 class="content-title">Небольшая площадь</h2>
-            <p class="content-text">&ndash; №3 &ndash;</p>
-            <p class="content-text">Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="attractions__item">
-            <h2 class="content-title">Красивая дорога</h2>
-            <p class="content-text">&ndash; №4 &ndash;</p>
-            <p class="content-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="attractions__item">
-            <h2 class="content-title">Мало туристов</h2>
-            <p class="content-text">&ndash; №5 &ndash;</p>
-            <p class="content-text">Большинство едет в гранд каньон и толпится там</p>
-          </div>
-        </section>
-        <section class="search">
+        </div>
+      </section>
+      <section class="attractions attractions--pic">
+        <div class="attractions__item">
+          <h2 class="content-title">Настоящий городок</h2>
+          <p class="content-text">&ndash; №1 &ndash;</p>
+          <p class="content-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="attractions__pic">
+          <img class="attractions__img" src="#" width="" height="" alt="Sedona">
+        </div>
+      </section>
+      <section class="tips">
+        <div class="tips__item tips__item--house">
+          <h2 class="content-title">Жилье</h2>
+          <p class="content-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="tips__item tips__item--gift">
+          <h2 class="content-title">Сувениры</h2>
+          <p class="content-text">Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="tips__item tips__item--food">
+          <h2 class="content-title">Еда</h2>
+          <p class="content-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+      </section>
+      <section class="attractions attractions--pic">
+        <div class="attractions__item">
+          <h2 class="content-title">Там есть мост дьявола</h2>
+          <p class="content-text">&ndash; №2 &ndash;</p>
+          <p class="content-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <div class="attractions__pic">
+          <img class="attractions__img" src="#" width="" height="" alt="Sedona">
+        </div>
+      </section>
+      <section class="attractions">
+        <div class="attractions__item">
+          <h2 class="content-title">Небольшая площадь</h2>
+          <p class="content-text">&ndash; №3 &ndash;</p>
+          <p class="content-text">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="attractions__item">
+          <h2 class="content-title">Красивая дорога</h2>
+          <p class="content-text">&ndash; №4 &ndash;</p>
+          <p class="content-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="attractions__item">
+          <h2 class="content-title">Мало туристов</h2>
+          <p class="content-text">&ndash; №5 &ndash;</p>
+          <p class="content-text">Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </section>
+      <section class="search">
+        <div class="search__wrapper">
           <h2 class="content-title">Заинтересовались?</h2>
           <p class="content-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="btn btn--search" href="#">Найти гостиницу</a>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="map">
         <!-- todo yandex or google map -->
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__wrapper">
         <div class="menu">
           <a class="menu__link" href="#">#visitsedona</a>
         </div>
         <div class="social">
-          <a class="btn-social btn-social--tw" href="#">Twitter</a>
-          <a class="btn-social btn-social--fb" href="#">Facebook</a>
-          <a class="btn-social btn-social--yt" href="#">YouTube</a>
+          <a class="social__btn social__btn--tw" href="#">Twitter</a>
+          <a class="social__btn social__btn--fb" href="#">Facebook</a>
+          <a class="social__btn social__btn--yt" href="#">YouTube</a>
         </div>
         <div class="developer">
           <a class="developer__link" href="https://htmlacademy.ru/">Разработано</a>

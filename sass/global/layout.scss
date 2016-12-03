@@ -1,0 +1,24 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 320px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  @include ptsans();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-style: normal;
+}
+
+.visually-hidden {
+  display: none;
+}

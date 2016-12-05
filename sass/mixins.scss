@@ -1,8 +1,1 @@
-@mixin ptsans($weight: 'regular') {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-weight: 400;
 
-  @if ($weight == 'bold') {
-    font-weight: 700;
-  }
-}

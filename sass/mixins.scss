@@ -1,1 +1,25 @@
 
+@mixin container {
+  min-width: 320px;
+
+  @media #{$tablet-widths} {
+    min-width: 768px;
+  }
+
+  @media #{$desktop-widths} {
+    width: auto;
+  }
+}
+
+@mixin container-fixed {
+  width: 300px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 472px;
+  }
+
+  @media #{$desktop-widths} {
+    width: auto;
+  }
+}

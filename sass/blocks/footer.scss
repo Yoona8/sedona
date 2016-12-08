@@ -1,3 +1,4 @@
 .footer__wrapper {
+  @include container-fixed();
   padding: 0 20px;
 }

@@ -1,4 +1,6 @@
 .header {
-  @include container-fixed();
+  display: flex;
+  flex-direction: column;
+  @include container();
   background-color: #ffffff;
 }

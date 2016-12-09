@@ -7,19 +7,7 @@
   }
 
   @media #{$desktop-widths} {
-    width: auto;
-  }
-}
-
-@mixin container-fixed {
-  width: 300px;
-  margin: 0 auto;
-
-  @media #{$tablet-widths} {
-    width: 472px;
-  }
-
-  @media #{$desktop-widths} {
-    width: auto;
+    width: 1200px;
+    margin: 0 auto;
   }
 }

@@ -2,18 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-      </div>
       <nav class="nav">
         <div class="nav__wrapper">
-          <button class="nav__toggle" type="button">Открыть</button>
+          <button class="nav__toggle" type="button">
+            Открыть
+            <svg class="nav__burger" viewBox="0 0 22.928 21.982">
+              <use xlink:href="./img/icon-menu.svg#burger"></use>
+            </svg>
+          </button>
           <button class="nav__close" type="button">Закрыть</button>
           <ul class="nav__list">
             <li class="nav__item nav__item--current"><a class="nav__link">Главная</a></li>
@@ -23,6 +26,9 @@
           </ul>
         </div>
       </nav>
+      <div class="logo">
+        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+      </div>
       <div class="intro intro--index">
         <h1 class="intro__title visually-hidden">Седона</h1>
       </div>

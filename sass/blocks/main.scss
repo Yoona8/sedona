@@ -1,4 +1,4 @@
 .main {
-  @include container-fixed();
+  @include container();
   background-color: #ffffff;
 }

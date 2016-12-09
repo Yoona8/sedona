@@ -1,6 +1,6 @@
 .logo {
   width: 102px;
-  height: 56px; // todo delete later, cuz only for layout
+  height: 55px;
   margin: 0 auto;
 }
 
@@ -16,9 +16,10 @@
   }
 }
 
-@media #{$tablet-widths} {
+@media #{$desktop-widths} {
   .logo--desktop {
     display: block;
+    width: 188px;
   }
 
   .logo--tablet {

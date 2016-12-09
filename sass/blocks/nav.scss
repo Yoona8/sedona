@@ -23,4 +23,8 @@
 
 .nav__item {
   background-color: $bg-blue;
+
+  &--logo {
+    display: none;
+  }
 }

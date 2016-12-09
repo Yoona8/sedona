@@ -28,3 +28,14 @@
     display: none;
   }
 }
+
+@media #{$tablet-widths} {
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__item--logo {
+    display: block;
+  }
+}

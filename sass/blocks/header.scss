@@ -4,3 +4,7 @@
   @include container();
   background-color: #ffffff;
 }
+
+@media #{$tablet-widths} {
+  display: block;
+}

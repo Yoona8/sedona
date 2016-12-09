@@ -1,5 +1,27 @@
 .logo {
   width: 102px;
-  height: 83px;
+  height: 56px; // todo delete later, cuz only for layout
   margin: 0 auto;
+}
+
+.logo__img {
+  position: relative;
+  z-index: 1;
+}
+
+@media #{$tablet-widths} {
+  .logo--mobile,
+  .logo--desktop {
+    display: none;
+  }
+}
+
+@media #{$tablet-widths} {
+  .logo--desktop {
+    display: block;
+  }
+
+  .logo--tablet {
+    display: none;
+  }
 }

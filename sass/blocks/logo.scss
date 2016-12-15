@@ -2,27 +2,27 @@
   width: 102px;
   height: 55px;
   margin: 0 auto;
+
+  @include tablet {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    &--desktop {
+      display: block;
+      width: 188px;
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
 }
 
 .logo__img {
   position: relative;
   z-index: 1;
-}
-
-@media #{$tablet-widths} {
-  .logo--mobile,
-  .logo--desktop {
-    display: none;
-  }
-}
-
-@media #{$desktop-widths} {
-  .logo--desktop {
-    display: block;
-    width: 188px;
-  }
-
-  .logo--tablet {
-    display: none;
-  }
 }

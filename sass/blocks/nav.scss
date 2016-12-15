@@ -1,6 +1,10 @@
 .nav {
   position: relative;
   background-color: $bg-blue;
+
+  @include tablet {
+    background-color: #ffffff;
+  }
 }
 
 .nav__wrapper {
@@ -19,6 +23,10 @@
   background: none;
   outline: none;
   cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav__burger {
@@ -39,6 +47,10 @@
   background: none;
   outline: none;
   cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav__cross {
@@ -53,6 +65,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .nav__item {
@@ -71,6 +88,17 @@
       padding: 0;
     }
   }
+
+  @include tablet {
+    width: 20%;
+    font-size: 1.4rem;
+    color: #000000;
+    background-color: #ffffff;
+
+    &--logo {
+      display: block;
+    }
+  }
 }
 
 // todo add shadows/borders
@@ -79,36 +107,9 @@
   padding: 14px 2px;
   color: #ffffff;
   text-decoration: none;
-}
 
-@media #{$tablet-widths} {
-  .nav {
-    background-color: #ffffff;
-  }
-
-  .nav__toggle,
-  .nav__close {
-    display: none;
-  }
-
-  .nav__list {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .nav__item {
-    width: 20%;
-    font-size: 1.4rem;
-    color: #000000;
-    background-color: #ffffff;
-  }
-
-  .nav__link {
+  @include tablet {
     padding: 17px 2px;
     color: #000000;
-  }
-
-  .nav__item--logo {
-    display: block;
   }
 }

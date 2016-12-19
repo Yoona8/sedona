@@ -7,21 +7,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-      </div>
       <nav class="nav">
         <div class="nav__wrapper">
-          <button class="nav__toggle" type="button">Открыть</button>
-          <button class="nav__close" type="button">Закрыть</button>
+          <button class="nav__toggle" type="button">
+            Открыть
+            <img class="nav__burger" src="./img/icon-menu.svg" alt="Menu">
+          </button>
+          <button class="nav__close" type="button">
+            Закрыть
+            <img class="nav__cross" src="./img/icon-cross.svg" alt="Close">
+          </button>
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
             <li class="nav__item"><a class="nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="nav__item nav__item--logo">
+              <a class="nav__link" href="index.html">
+                <div class="logo logo--tablet">
+                  <img class="logo__img" src="./img/logo-sedona-tablet.svg" width="102" height="83" alt="Sedona">
+                </div>
+                <div class="logo logo--desktop">
+                  <img class="logo__img" src="./img/logo-sedona-desktop.svg" width="188" height="96" alt="Sedona">
+                </div>
+              </a>
+            </li>
             <li class="nav__item nav__item--current"><a class="nav__link">Форма отзыва</a></li>
             <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
+      <div class="logo logo--mobile">
+        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+      </div>
       <div class="intro">
         <h1 class="intro__title visually-hidden">Седона</h1>
         <!-- todo: add 2 backgrounds -->
@@ -36,7 +52,7 @@
       </section>
         <form class="feedback">
           <div class="feedback__wrapper">
-            <fieldset class="feedback__item">
+            <fieldset class="feedback__item feedback__item--intro">
               <legend class="content-title">Представьтесь:</legend>
               <div class="feedback__field">
                 <label class="feedback__label" for="name">Имя*:</label>
@@ -51,7 +67,7 @@
                 <input class="feedback__input" id="fathersname" name="fathersname" type="text">
               </div>
             </fieldset>
-            <fieldset class="feedback__item">
+            <fieldset class="feedback__item feedback__item--contacts">
               <legend class="content-title">Контактная информация</legend>
               <div class="feedback__field">
                 <label class="feedback__label" for="tel">Контактный телефон*:</label>
@@ -63,7 +79,7 @@
                 <input class="feedback__input" id="mail" name="mail" type="email" placeholder="Введите e-mail" required>
               </div>
             </fieldset>
-            <fieldset class="feedback__item">
+            <fieldset class="feedback__item feedback__item--impression">
               <legend class="content-title">Ваше общее впечатление</legend>
               <input class="feedback__input" id="good" name="impression" type="radio" value="good" checked>
               <label for="good" class="feedback__label">Скорее положительное</label>
@@ -74,7 +90,7 @@
               <input class="feedback__input" id="middle" name="impression" type="radio" value="middle">
               <label for="middle" class="feedback__label">Затрудняюсь ответить</label>
             </fieldset>
-            <fieldset class="feedback__item">
+            <fieldset class="feedback__item feedback__item--sights">
               <legend class="content-title">Посещенные достопримечательности</legend>
               <input class="feedback__input" id="devils-bridge" name="visited-sights" type="checkbox" value="devils-bridge" checked>
               <label for="devils-bridge" class="feedback__label">Мост Дьявола</label>
@@ -88,7 +104,7 @@
               <input class="feedback__input" id="red-rocks" name="visited-sights" type="checkbox" value="red-rocks" checked>
               <label for="red-rocks" class="feedback__label">Красные скалы</label>
             </fieldset>
-            <fieldset class="feedback__item">
+            <fieldset class="feedback__item feedback__item--emotions">
               <label for="emotions" class="content-title">Опишите свои эмоции:</label>
               <textarea class="feedback__input" id="emotions" name="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
             </fieldset>

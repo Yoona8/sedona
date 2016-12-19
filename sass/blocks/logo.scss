@@ -1,5 +1,28 @@
 .logo {
   width: 102px;
-  height: 83px;
+  height: 55px;
   margin: 0 auto;
+
+  @include tablet {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    &--desktop {
+      display: block;
+      width: 188px;
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
+.logo__img {
+  position: relative;
+  z-index: 1;
 }

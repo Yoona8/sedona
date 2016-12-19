@@ -1,11 +1,115 @@
 .nav {
+  position: relative;
   background-color: $bg-blue;
+
+  @include tablet {
+    background-color: #ffffff;
+  }
 }
 
 .nav__wrapper {
   padding: 0 20px;
 }
 
+.nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  width: 25px;
+  height: 25px;
+  padding: 17px 0 0;
+  font-size: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.nav__burger {
+  width: 25px;
+  height: 25px;
+  fill: $bg-blue;
+}
+
+.nav__close {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.nav__cross {
+  width: 25px;
+  height: 25px;
+  fill: #ffffff;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .nav__item {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: $bg-blue;
+
+  &--logo {
+    display: none;
+
+    .nav__link {
+      padding: 0;
+    }
+  }
+
+  @include tablet {
+    width: 20%;
+    font-size: 1.4rem;
+    color: #000000;
+    background-color: #ffffff;
+
+    &--logo {
+      display: block;
+    }
+  }
+}
+
+// todo add shadows/borders
+.nav__link {
+  display: block;
+  padding: 14px 2px;
+  color: #ffffff;
+  text-decoration: none;
+
+  @include tablet {
+    padding: 17px 2px;
+    color: #000000;
+  }
 }

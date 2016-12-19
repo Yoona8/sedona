@@ -2,26 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-      </div>
       <nav class="nav">
         <div class="nav__wrapper">
-          <button class="nav__toggle" type="button">Открыть</button>
-          <button class="nav__close" type="button">Закрыть</button>
+          <button class="nav__toggle" type="button">
+            Открыть
+            <img class="nav__burger" src="./img/icon-menu.svg" alt="Menu">
+          </button>
+          <button class="nav__close" type="button">
+            Закрыть
+            <img class="nav__cross" src="./img/icon-cross.svg" alt="Close">
+          </button>
           <ul class="nav__list">
             <li class="nav__item nav__item--current"><a class="nav__link">Главная</a></li>
             <li class="nav__item"><a class="nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="nav__item nav__item--logo">
+              <a class="nav__link">
+                <div class="logo logo--tablet">
+                  <img class="logo__img" src="./img/logo-sedona-tablet.svg" width="102" height="83" alt="Sedona">
+                </div>
+                <div class="logo logo--desktop">
+                  <img class="logo__img" src="./img/logo-sedona-desktop.svg" width="188" height="96" alt="Sedona">
+                </div>
+              </a>
+            </li>
             <li class="nav__item"><a class="nav__link" href="form-feedback.html">Форма отзыва</a></li>
             <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
+      <div class="logo logo--mobile">
+        <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+      </div>
       <div class="intro intro--index">
         <h1 class="intro__title visually-hidden">Седона</h1>
       </div>
@@ -40,7 +57,8 @@
           <p class="content-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="attractions__pic">
-          <img class="attractions__img" src="#" width="" height="" alt="Sedona">
+          <!-- todo as background -->
+          <img class="attractions__img" src="./img/photo-city@1x.jpg" width="" height="" alt="Sedona">
         </div>
       </section>
       <section class="tips">
@@ -58,13 +76,14 @@
         </div>
       </section>
       <section class="attractions attractions--pic">
+        <div class="attractions__pic">
+          <!-- todo add as background -->
+          <img class="attractions__img" src="./img/photo-bridge@1x.jpg" width="" height="" alt="Sedona">
+        </div>
         <div class="attractions__item">
           <h2 class="content-title">Там есть мост дьявола</h2>
           <p class="content-text">&ndash; №2 &ndash;</p>
           <p class="content-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        </div>
-        <div class="attractions__pic">
-          <img class="attractions__img" src="#" width="" height="" alt="Sedona">
         </div>
       </section>
       <section class="attractions">

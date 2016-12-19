@@ -1,8 +1,24 @@
-@mixin ptsans($weight: 'regular') {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-weight: 400;
+@mixin container {
+  min-width: 320px;
 
-  @if ($weight == 'bold') {
-    font-weight: 700;
+  @media #{$tablet-widths} {
+    min-width: 768px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet-widths} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop-widths} {
+    @content;
   }
 }

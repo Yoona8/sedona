@@ -4,8 +4,17 @@
   &--pic {
     background-color: $bg-blue;
   }
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .attractions__item {
   padding: 0 20px;
+  flex-grow: 1;
+}
+
+.attractions__pic {
+  flex-grow: 2;
 }

@@ -1,3 +1,11 @@
+.footer {
+  @include container();
+}
+
 .footer__wrapper {
   padding: 0 20px;
+
+  @include tablet {
+    display: flex;
+  }
 }

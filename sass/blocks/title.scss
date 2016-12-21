@@ -1,20 +1,29 @@
 .title {
   position: relative;
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    height: 20px;
-    background-color: #fff;
+.title__decor {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  fill: #ffffff;
+
+  @include tablet {
+    display: none;
   }
 }
 
 .title__wrapper {
-  padding: 40px 20px 20px;
+  padding: 40px 20px 22px;
 }
 
 // content-title styles for title block
 .title .content-title {
   margin-bottom: 30px;
+}
+
+// attractions styles after title block
+
+.title + .attractions {
+  padding-top: 16px;
 }

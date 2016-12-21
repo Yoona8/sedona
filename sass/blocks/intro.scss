@@ -1,28 +1,23 @@
 .intro {
   position: relative;
   height: 158px;
-  margin-bottom: 40px;
   background-color: $bg-blue;
   background-image: url('../img/text-sedona.svg'), url('../img/bg-back-mobile@1x.jpg');
   background-position: center;
   background-size: 280px auto, cover;
   background-repeat: no-repeat;
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: url('../img/bg-intro-triangle-mobile.svg') center bottom no-repeat;
-    background-size: 102% auto;
-  }
-
   @include tablet {
     height: 290px;
 
     &::after {
-      background-image: url('../img/bg-intro-triangle-tablet.svg');
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background: url('../img/bg-intro-triangle-tablet.svg') center bottom no-repeat;
+      background-size: 102% auto;
     }
   }
 
@@ -34,5 +29,11 @@
       background-image: url('../img/bg-intro-triangle-desktop.svg');
     }
   }
+}
 
+.intro__mobile-decor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  fill: #ffffff;
 }

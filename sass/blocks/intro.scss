@@ -8,16 +8,11 @@
   background-size: 280px auto, cover;
   background-repeat: no-repeat;
 
-  &--index {
-    height: 388px;
-    background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-mobile@1x.jpg');
-  }
-
   &::after {
     content: '';
     position: absolute;
     bottom: 0;
-    height: 200px;
+    height: 100%;
     width: 100%;
     background: url('../img/bg-intro-triangle-mobile.svg') center bottom no-repeat;
     background-size: cover;

@@ -2,6 +2,7 @@
   background-color: $bg-lightgray;
 
   &--pic {
+    color: #ffffff;
     background-color: $bg-blue;
   }
 
@@ -12,9 +13,20 @@
 
 .attractions__item {
   padding: 42px 20px 22px;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .attractions__pic {
-  flex-grow: 2;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.attractions__img {
+  width: 100%;
+  height: auto;
 }

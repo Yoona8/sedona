@@ -26,4 +26,8 @@
 
 .title + .attractions {
   padding-top: 16px;
+
+  @include tablet {
+    padding-top: 0;
+  }
 }

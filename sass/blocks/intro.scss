@@ -8,14 +8,6 @@
   background-size: 280px auto, cover;
   background-repeat: no-repeat;
 
-  @include tablet {
-    height: 290px;
-  }
-
-  @include desktop {
-    height: 300px;
-  }
-
   &::after {
     content: '';
     position: absolute;
@@ -23,6 +15,24 @@
     height: 100%;
     width: 100%;
     background: url('../img/bg-intro-triangle-mobile.svg') center bottom no-repeat;
-    background-size: cover;
+    background-size: 102% auto;
   }
+
+  @include tablet {
+    height: 290px;
+
+    &::after {
+      background-image: url('../img/bg-intro-triangle-tablet.svg');
+    }
+  }
+
+  @include desktop {
+    height: 300px;
+
+    &::after {
+      height: 60px;
+      background-image: url('../img/bg-intro-triangle-desktop.svg');
+    }
+  }
+
 }

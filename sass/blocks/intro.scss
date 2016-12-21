@@ -8,6 +8,14 @@
   background-size: 280px auto, cover;
   background-repeat: no-repeat;
 
+  @include tablet {
+    height: 290px;
+  }
+
+  @include desktop {
+    height: 300px;
+  }
+
   &::after {
     content: '';
     position: absolute;

@@ -24,6 +24,12 @@
   height: 260px;
   margin: 0 auto;
   overflow: hidden;
+
+  @include tablet {
+    &--reverse {
+      order: -1;
+    }
+  }
 }
 
 .attractions__img {

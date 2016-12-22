@@ -3,6 +3,7 @@
 
   @include tablet {
     display: flex;
+    justify-content: space-around;
     padding-top: 0;
   }
 }
@@ -15,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 57px 35px 37px;
+    padding: 57px 0 37px;
 
     &--gift {
       order: 1;
@@ -41,6 +42,7 @@
   text-align: left;
 
   @include tablet {
+    max-width: 180px;
     text-align: center;
   }
 }
@@ -50,6 +52,7 @@
   text-align: left;
 
   @include tablet {
+    max-width: 180px;
     text-align: center;
   }
 }

@@ -1,13 +1,26 @@
 .tips {
   padding-top: 30px;
+
   @include tablet {
     display: flex;
+    padding-top: 0;
   }
 }
 
 .tips__item {
   position: relative;
   padding: 7px 20px 7px 70px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 57px 35px 37px;
+
+    &--gift {
+      order: 1;
+    }
+  }
 }
 
 .tips__icon {
@@ -16,15 +29,27 @@
   left: 20px;
   width: 41px;
   height: 41px;
-  background-image: url('../img/icon-house.svg');
+
+  @include tablet {
+    position: static;
+    margin-bottom: 28px;
+  }
 }
 
 // content-title styles for tips block
 .tips .content-title {
   text-align: left;
+
+  @include tablet {
+    text-align: center;
+  }
 }
 
 // content-text styles for tips block
 .tips .content-text {
   text-align: left;
+
+  @include tablet {
+    text-align: center;
+  }
 }

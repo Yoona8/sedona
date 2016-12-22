@@ -12,6 +12,12 @@
 
   @include tablet {
     display: flex;
+
+    &--pic {
+      .attractions__item {
+        padding: 42px 30px 22px;
+      }
+    }
   }
 }
 
@@ -36,6 +42,8 @@
   }
 
   @include tablet {
+    padding: 42px 50px 22px;
+
     &::after {
       display: none;
     }

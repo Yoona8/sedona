@@ -15,6 +15,12 @@
 
 .title__wrapper {
   padding: 40px 20px 22px;
+
+  @include tablet {
+    max-width: 560px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
 }
 
 // content-title styles for title block

@@ -6,7 +6,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body class="photo">
     <div class="site-wrapper">
       <header class="header">
         <nav class="nav">
@@ -61,7 +61,9 @@
         </section>
         <section class="gallery">
           <div class="gallery__item">
-            <img class="gallery__img" src="./img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            <div class="gallery__pic">
+              <img class="gallery__img" src="./img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            </div>
             <h3 class="gallery__title">Неродные просторы</h3>
             <p class="gallery__author">Автор фото: Борис</p>
             <div class="gallery__like">
@@ -70,7 +72,9 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__img" src="./img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            <div class="gallery__pic">
+              <img class="gallery__img" src="./img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            </div>
             <h3 class="gallery__title">Местная растительность</h3>
             <p class="gallery__author">Автор фото: Сергей</p>
             <div class="gallery__like">
@@ -79,7 +83,9 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__img" src="./img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            <div class="gallery__pic">
+              <img class="gallery__img" src="./img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            </div>
             <h3 class="gallery__title">Дорога на север</h3>
             <p class="gallery__author">Автор фото: Петр</p>
             <div class="gallery__like">
@@ -88,7 +94,9 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__img" src="./img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            <div class="gallery__pic">
+              <img class="gallery__img" src="./img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Photo">
+            </div>
             <h3 class="gallery__title">Мост дьявола</h3>
             <p class="gallery__author">Автор фото: Антон</p>
             <div class="gallery__like">
@@ -103,12 +111,25 @@
             <p class="content-text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
               раз!</p>
           </div>
-          <video class="video__item" width="320" height="201" controls>
-            <source src="#.mp4" type="video/mp4">
-            <source src="#.ogg" type="video/ogg">
-            Ваш браузер не поддерживает тэг video.
-          </video>
-        </section>
+          <div class="video__item-wrapper">
+            <video class="video__item" width="320" height="201">
+              <source src="#.mp4" type="video/mp4">
+              <source src="#.ogg" type="video/ogg">
+              Ваш браузер не поддерживает тэг video.
+            </video>
+            <div class="video__controls">
+              <div class="video__controls-panel">
+                <div class="video__controls-bar"></div>
+                <div class="video__controls-scroll"></div>
+              </div>
+              <div class="video__controls-btns">
+                <button class="video__btn video__btn--repeat" type="button">Repeat</button>
+                <button class="video__btn video__btn--source" type="button">To source</button>
+                <button class="video__btn video__btn--full" type="button">Full screen</button>
+              </div>
+            </div>
+          </div>
+      </section>
       </main>
       <footer class="footer">
         <div class="footer__wrapper">

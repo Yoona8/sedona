@@ -111,6 +111,12 @@
     }
   }
 
+  &--logo:active {
+    .nav__link {
+      opacity: 1;
+    }
+  }
+
   &--current {
     &:hover,
     &:active {

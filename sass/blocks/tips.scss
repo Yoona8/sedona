@@ -55,4 +55,8 @@
     max-width: 180px;
     text-align: center;
   }
+
+  @include desktop {
+    max-width: 280px;
+  }
 }

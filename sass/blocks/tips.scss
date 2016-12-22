@@ -1,9 +1,30 @@
 .tips {
+  padding-top: 30px;
   @include tablet {
     display: flex;
   }
 }
 
 .tips__item {
-  padding: 0 20px;
+  position: relative;
+  padding: 7px 20px 7px 70px;
+}
+
+.tips__icon {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 41px;
+  height: 41px;
+  background-image: url('../img/icon-house.svg');
+}
+
+// content-title styles for tips block
+.tips .content-title {
+  text-align: left;
+}
+
+// content-text styles for tips block
+.tips .content-text {
+  text-align: left;
 }

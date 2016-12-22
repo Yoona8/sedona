@@ -12,5 +12,17 @@
       background-color: #000000;
       opacity: 0.1;
     }
+
+    @include tablet {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include tablet {
+    .title .content-title {
+      font-size: 3rem;
+    }
   }
 }

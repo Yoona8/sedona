@@ -4,6 +4,10 @@
   &--pic {
     color: #ffffff;
     background-color: $bg-blue;
+
+    .attractions__item::after {
+      display: none;
+    }
   }
 
   @include tablet {
@@ -12,8 +16,30 @@
 }
 
 .attractions__item {
+  position: relative;
   padding: 42px 20px 22px;
   flex: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.1;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  @include tablet {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .attractions__pic {

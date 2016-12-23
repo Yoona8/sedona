@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     padding: 0 60px;
   }
+
+  @include desktop {
+    padding: 0 120px;
+  }
 }
 
 .feedback__item {
@@ -98,9 +102,19 @@
 }
 
 .feedback__item--contacts {
+  padding-bottom: 10px;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
   .feedback__field {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    margin-bottom: 30px;
 
     @include tablet {
       flex-direction: row;
@@ -109,26 +123,53 @@
     }
   }
 
+  .content-title {
+    @include desktop {
+      flex-basis: 100%;
+      margin-bottom: 75px;
+    }
+  }
+
   .form__input {
     margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
 
+    @include desktop {
+      width: 318px;
+    }
+  }
+
+  .form__input-wrapper {
     @include tablet {
-      order: 1;
       flex-basis: 100%;
+    }
+
+    @include desktop {
+      order: 1;
+      flex-basis: auto;
     }
   }
 
   .form__label {
     padding-left: 20px;
     margin-bottom: 10px;
-  }
 
-  .form__mistake {
-    padding-left: 20px;
-    margin-top: 10px;
+    &--small {
+      display: none;
+    }
 
-    @include tablet {
-      margin: 0 0 10px;
+    @include desktop {
+      padding: 0 15px 0 0;
+      margin-bottom: 0;
+
+      &--small {
+        display: block;
+      }
+
+      &--big {
+        display: none;
+      }
     }
   }
 }
@@ -143,6 +184,10 @@
         display: none;
       }
     }
+
+    @include desktop {
+      padding-left: 80px;
+    }
   }
 }
 
@@ -151,6 +196,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  @include desktop {
+    justify-content: space-between;
   }
 
   .content-title {
@@ -202,6 +251,10 @@
     @include tablet {
       margin: 0;
       max-width: 324px;
+    }
+
+    @include desktop {
+      max-width: 480px;
     }
   }
 }

@@ -80,13 +80,18 @@
                 <div class="content-title__wrapper">Контактная информация:</div>
               </h3>
               <div class="feedback__field">
-                <label class="form__label" for="tel">Контактный телефон*:</label>
-                <input class="form__input" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
-                <div class="form__mistake">Ошибка, перепроверьте номер</div>
+                <label class="form__label form__label--big" for="tel">Контактный телефон*:</label>
+                <label class="form__label form__label--small" for="tel">Телефон*:</label>
+                <div class="form__input-wrapper">
+                  <input class="form__input" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
+                  <div class="form__mistake">Ошибка, перепроверьте номер</div>
+                </div>
               </div>
               <div class="feedback__field">
                 <label class="form__label" for="mail">Электронная почта*:</label>
-                <input class="form__input" id="mail" name="mail" type="email" placeholder="Введите e-mail" required>
+                <div class="form__input-wrapper">
+                  <input class="form__input" id="mail" name="mail" type="email" placeholder="Введите e-mail" required>
+                </div>
               </div>
             </section>
             <section class="feedback__item feedback__item--impression">

@@ -76,7 +76,9 @@
               </div>
             </section>
             <section class="feedback__item feedback__item--contacts">
-              <h3 class="content-title">Контактная информация:</h3>
+              <h3 class="content-title">
+                <div class="content-title__wrapper">Контактная информация:</div>
+              </h3>
               <div class="feedback__field">
                 <label class="form__label" for="tel">Контактный телефон*:</label>
                 <input class="form__input" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
@@ -99,7 +101,9 @@
               <label for="middle" class="form__label">Затрудняюсь ответить</label>
             </section>
             <section class="feedback__item feedback__item--sights">
-              <h3 class="content-title">Посещенные достопримечательности:</h3>
+              <h3 class="content-title">
+                <div class="content-title__wrapper">Посещенные достопримечательности:</div>
+              </h3>
               <input class="form__input" id="devils-bridge" name="visited-sights" type="checkbox" value="devils-bridge" checked>
               <label class="form__label" for="devils-bridge">Мост Дьявола</label>
 
@@ -113,11 +117,14 @@
               <label class="form__label" for="red-rocks">Красные скалы</label>
             </section>
             <section class="feedback__item feedback__item--emotions">
-              <h3 for="emotions" class="content-title">Опишите свои эмоции:</h3>
-              <textarea class="form__input" id="emotions" name="emotions" rows="10">Опишите подробно все свои восторги</textarea>
+              <h3 for="emotions" class="content-title">
+                <div class="content-title__wrapper">Опишите свои эмоции:</div>
+              </h3>
+              <textarea class="form__input" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </section>
-            <section class="feedback__item">
+            <section class="feedback__item feedback__item--button">
               <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
+              <div class="feedback__note">* &ndash; обязательные поля</div>
             </section>
           </div>
         </form>

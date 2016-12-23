@@ -45,15 +45,67 @@
 
 .attractions__pic {
   flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 260px;
-  overflow: hidden;
+  font-size: 0;
+  background: center no-repeat;
+  background-size: cover;
+
+  &--city {
+    background-image: url('../img/photo-city-mobile@1x.jpg');
+  }
+
+  &--bridge {
+    background-image: url('../img/photo-bridge-mobile@1x.jpg');
+  }
+
+  @include retina {
+    &--city {
+      background-image: url('../img/photo-city-mobile@2x.jpg');
+    }
+
+    &--bridge {
+      background-image: url('../img/photo-bridge-mobile@2x.jpg');
+    }
+  }
 
   @include tablet {
-    &--reverse {
+    &--city {
+      background-image: url('../img/photo-city-tablet@1x.jpg');
+    }
+
+    &--bridge {
       order: -1;
+      background-image: url('../img/photo-bridge-tablet@1x.jpg');
+    }
+
+    @include retina {
+      &--city {
+        background-image: url('../img/photo-city-tablet@2x.jpg');
+      }
+
+      &--bridge {
+        background-image: url('../img/photo-bridge-tablet@2x.jpg');
+      }
+    }
+  }
+
+  @include desktop {
+    &--city {
+      background-image: url('../img/photo-city@1x.jpg');
+    }
+
+    &--bridge {
+      background-image: url('../img/photo-bridge@1x.jpg');
+    }
+
+    @include retina {
+      &--city {
+        background-image: url('../img/photo-city@2x.jpg');
+      }
+
+      &--bridge {
+        background-image: url('../img/photo-bridge@2x.jpg');
+      }
     }
   }
 }

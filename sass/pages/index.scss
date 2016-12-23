@@ -2,5 +2,25 @@
   .intro {
     height: 388px;
     background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-mobile@1x.jpg');
+
+    @include retina {
+      background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-mobile@2x.jpg');
+    }
+
+    @include tablet {
+      background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-tablet@1x.jpg');
+
+      @include retina {
+        background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-tablet@2x.jpg');
+      }
+    }
+
+    @include desktop {
+      background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-desktop@1x.jpg');
+
+      @include retina {
+        background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-desktop@2x.jpg');
+      }
+    }
   }
 }

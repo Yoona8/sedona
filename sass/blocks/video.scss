@@ -3,6 +3,7 @@
 
   @include tablet {
     padding-bottom: 40px;
+    margin: 0 auto;
   }
 }
 
@@ -18,13 +19,17 @@
 
 .video__item-wrapper {
   position: relative;
-  max-width: 800px;
+  max-width: 648px;
   height: 202px;
   margin: 0 auto;
 
   @include tablet {
     height: 500px;
     padding: 0 60px;
+  }
+
+  @include desktop {
+    max-width: 800px;
   }
 }
 

@@ -113,13 +113,17 @@
 
   .feedback__field {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 30px;
 
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    @include desktop {
+      align-items: center;
     }
   }
 

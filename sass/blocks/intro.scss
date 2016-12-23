@@ -7,8 +7,13 @@
   background-size: 280px auto, cover;
   background-repeat: no-repeat;
 
+  @include retina {
+    background-image: url('../img/text-sedona.svg'), url('../img/bg-back-mobile@2x.jpg');
+  }
+
   @include tablet {
     height: 290px;
+    background-image: url('../img/text-sedona.svg'), url('../img/bg-back-tablet@1x.jpg');
 
     &::after {
       content: '';
@@ -19,14 +24,23 @@
       background: url('../img/bg-intro-triangle-tablet.svg') center bottom no-repeat;
       background-size: 102% auto;
     }
+
+    @include retina {
+      background-image: url('../img/text-sedona.svg'), url('../img/bg-back-tablet@2x.jpg');
+    }
   }
 
   @include desktop {
     height: 300px;
+    background-image: url('../img/text-sedona.svg'), url('../img/bg-back-desktop@1x.jpg');
 
     &::after {
       height: 60px;
       background-image: url('../img/bg-intro-triangle-desktop.svg');
+    }
+
+    @include retina {
+      background-image: url('../img/text-sedona.svg'), url('../img/bg-back-desktop@2x.jpg');
     }
   }
 }

@@ -4,4 +4,24 @@
   background-image: url('../img/bg-map-mobile@1x.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url('../img/bg-map-mobile@2x.jpg');
+  }
+
+  @include tablet {
+    background-image: url('../img/bg-map-tablet@1x.jpg');
+
+    @include retina {
+      background-image: url('../img/bg-map-tablet@2x.jpg');
+    }
+  }
+
+  @include desktop {
+    background-image: url('../img/bg-map-desktop@1x.jpg');
+
+    @include retina {
+      background-image: url('../img/bg-map-desktop@2x.jpg');
+    }
+  }
 }

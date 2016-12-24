@@ -1,28 +1,168 @@
-.gallery {
+.gallery__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    width: 648px;
     padding: 0 60px;
+  }
+
+  @include desktop {
+    padding: 0;
+    width: 1200px;
   }
 }
 
 .gallery__item {
-  padding: 0 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.1;
+  }
 
   @include tablet {
     padding: 0;
     flex-basis: 50%;
+    background-color: #f2f2f2;
+
+    &:nth-child(2n+3) {
+      background-color: #eaeaea;
+    }
 
     &:first-child {
       flex-basis: 100%;
+
+      .gallery__pic {
+        width: 648px;
+        height: 400px;
+      }
+
+      .gallery__img {
+        width: 648px;
+        height: 400px;
+      }
+    }
+
+    &::after {
+      display: none;
     }
   }
 
   @include desktop {
     flex-basis: 33.33%;
+    background-color: transparent;
+
+    &:nth-child(2n+3) {
+      background-color: transparent;
+    }
 
     &:first-child {
       flex-basis: 100%;
+
+      .gallery__pic {
+        width: 1200px;
+      }
+
+      .gallery__img {
+        width: 1200px;
+      }
     }
   }
+}
+
+.gallery__pic {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+
+  @include tablet {
+    width: 324px;
+    height: 267px;
+  }
+
+  @include desktop {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.gallery__pic-source {
+  font-size: 0;
+}
+
+.gallery__img {
+  width: 280px;
+  height: 280px;
+
+  @include tablet {
+    width: 324px;
+    height: 267px;
+  }
+
+  @include desktop {
+    width: 400px;
+  }
+}
+
+.gallery__description-wrapper {
+  @include tablet {
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(#000000, 0.3);
+  }
+}
+
+.gallery__title {
+  margin: 0 0 9px;
+  font-size: 1.4rem;
+}
+
+.gallery__author {
+  margin: 0 0 9px;
+  text-transform: none;
+}
+
+.gallery__like {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    align-self: flex-end;
+  }
+}
+
+.gallery__like-count {
+  font-weight: 700;
 }

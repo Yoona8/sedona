@@ -1,9 +1,62 @@
 .tips {
+  padding-top: 30px;
+
   @include tablet {
     display: flex;
+    justify-content: space-around;
+    padding-top: 0;
   }
 }
 
 .tips__item {
-  padding: 0 20px;
+  position: relative;
+  padding: 7px 20px 7px 70px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 57px 0 37px;
+
+    &--gift {
+      order: 1;
+    }
+  }
+}
+
+.tips__icon {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 41px;
+  height: 41px;
+
+  @include tablet {
+    position: static;
+    margin-bottom: 28px;
+  }
+}
+
+// content-title styles for tips block
+.tips .content-title {
+  text-align: left;
+
+  @include tablet {
+    max-width: 180px;
+    text-align: center;
+  }
+}
+
+// content-text styles for tips block
+.tips .content-text {
+  text-align: left;
+
+  @include tablet {
+    max-width: 180px;
+    text-align: center;
+  }
+
+  @include desktop {
+    max-width: 280px;
+  }
 }

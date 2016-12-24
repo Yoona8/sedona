@@ -8,7 +8,9 @@
 }
 
 .nav__wrapper {
-  padding: 0 20px;
+  @include tablet {
+    padding: 0 20px;
+  }
 }
 
 .nav__toggle {
@@ -73,13 +75,21 @@
 }
 
 .nav__item {
+  padding: 0 20px;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(#010101, 0.2);
   color: #ffffff;
   background-color: $bg-blue;
+  box-shadow: 0 1px 0 0 rgba(#ffffff, 0.2) inset;
+
+  &:last-child {
+    border-bottom: none;
+    box-shadow: 0 -3px 5px 0 rgba(#010101, 0.2) inset;
+  }
 
   &--logo {
     display: none;
@@ -89,19 +99,72 @@
     }
   }
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .nav__link {
+      opacity: 0.3;
+    }
+  }
+
+  &--logo:active {
+    .nav__link {
+      opacity: 1;
+    }
+  }
+
+  &--current {
+    &:hover,
+    &:active {
+      background-color: $bg-blue;
+
+      .nav__link {
+        opacity: 1;
+      }
+    }
+  }
+
   @include tablet {
     width: 20%;
+    padding: 0;
     font-size: 1.4rem;
     color: #000000;
+    border-bottom: none;
     background-color: #ffffff;
+    box-shadow: none;
+
+    &:last-child {
+      box-shadow: none;
+    }
 
     &--logo {
       display: block;
     }
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &--current {
+      .nav__link {
+        color: #766357;
+
+        &:hover {
+          color: #604e43;
+        }
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
+    }
   }
 }
 
-// todo add shadows/borders
 .nav__link {
   display: block;
   padding: 14px 2px;
@@ -111,5 +174,9 @@
   @include tablet {
     padding: 17px 2px;
     color: #000000;
+
+    &:hover {
+      color: $bg-blue;
+    }
   }
 }

@@ -1,0 +1,16 @@
+.menu {
+  padding: 18px 0;
+  text-align: center;
+}
+
+.menu__link {
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 1.24;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

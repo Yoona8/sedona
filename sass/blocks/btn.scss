@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  max-width: 460px;
+  width: 100%;
+  padding: 16px 10px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 1.239;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: $bg-blue;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

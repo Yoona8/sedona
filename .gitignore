@@ -9,3 +9,4 @@ css/*.css
 node_modules/
 models_*/
 Thumbs.db
+build/

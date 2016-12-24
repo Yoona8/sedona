@@ -5,6 +5,7 @@
 
 @import "global/fonts";
 @import "global/layout";
+@import "global/forms";
 
 @import "blocks/header";
 @import "blocks/logo";
@@ -28,3 +29,5 @@
 @import "blocks/developer";
 
 @import "pages/index";
+@import "pages/photo";
+@import "pages/form-feedback";

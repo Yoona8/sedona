@@ -1,0 +1,13 @@
+.developer {
+  padding: 18px 0;
+  text-align: center;
+}
+
+.developer__link {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

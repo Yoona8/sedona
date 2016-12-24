@@ -2,7 +2,12 @@
   background-color: $bg-lightgray;
 
   &--pic {
+    color: #ffffff;
     background-color: $bg-blue;
+
+    .attractions__item::after {
+      display: none;
+    }
   }
 
   @include tablet {
@@ -11,10 +16,126 @@
 }
 
 .attractions__item {
-  padding: 0 20px;
-  flex-grow: 1;
+  position: relative;
+  padding: 42px 20px 22px;
+  flex: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.1;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  @include tablet {
+    padding: 42px 0 22px;
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .attractions__pic {
-  flex-grow: 2;
+  flex: 2;
+  height: 260px;
+  font-size: 0;
+  background: center no-repeat;
+  background-size: cover;
+
+  &--city {
+    background-image: url('../img/photo-city-mobile@1x.jpg');
+  }
+
+  &--bridge {
+    background-image: url('../img/photo-bridge-mobile@1x.jpg');
+  }
+
+  @include retina {
+    &--city {
+      background-image: url('../img/photo-city-mobile@2x.jpg');
+    }
+
+    &--bridge {
+      background-image: url('../img/photo-bridge-mobile@2x.jpg');
+    }
+  }
+
+  @include tablet {
+    &--city {
+      background-image: url('../img/photo-city-tablet@1x.jpg');
+    }
+
+    &--bridge {
+      order: -1;
+      background-image: url('../img/photo-bridge-tablet@1x.jpg');
+    }
+
+    @include retina {
+      &--city {
+        background-image: url('../img/photo-city-tablet@2x.jpg');
+      }
+
+      &--bridge {
+        background-image: url('../img/photo-bridge-tablet@2x.jpg');
+      }
+    }
+  }
+
+  @include desktop {
+    &--city {
+      background-image: url('../img/photo-city@1x.jpg');
+    }
+
+    &--bridge {
+      background-image: url('../img/photo-bridge@1x.jpg');
+    }
+
+    @include retina {
+      &--city {
+        background-image: url('../img/photo-city@2x.jpg');
+      }
+
+      &--bridge {
+        background-image: url('../img/photo-bridge@2x.jpg');
+      }
+    }
+  }
+}
+
+.attractions__img {
+  width: 100%;
+  height: auto;
+}
+
+
+// content-title styles for attractions block
+.attractions .content-title {
+  @include tablet {
+    max-width: 160px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// content-text styles for attractions block
+.attractions .content-text {
+  @include tablet {
+    max-width: 180px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    max-width: 280px;
+  }
 }

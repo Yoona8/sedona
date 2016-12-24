@@ -1,11 +1,14 @@
 .footer {
   @include container();
+  background-color: #ffffff;
 }
 
 .footer__wrapper {
-  padding: 0 20px;
+  padding: 18px 20px;
 
   @include tablet {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }

@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "gulp style",
+    "build": "gulp dev",
     "start": "gulp serve"
   },
   "editorconfig-cli": [

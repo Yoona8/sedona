@@ -119,16 +119,36 @@
 }
 
 .video__btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 66px;
   padding: 0;
+  font-size: 0;
   border: none;
   background-color: #f2f2f2;
   cursor: pointer;
+  outline: none;
 
-  &--source {
+  &--sub {
     margin-left: auto;
+  }
+
+  &:hover {
+    .video__icon {
+      fill: #333333;
+
+      @include tablet {
+        fill: $bg-lightgray;
+      }
+    }
+  }
+
+  &:active {
+    .video__icon {
+      fill: #c1c1c1;
+    }
   }
 
   @include tablet {
@@ -136,6 +156,14 @@
     &--repeat {
       order: -1;
     }
+  }
+}
+
+.video__icon {
+  fill: #5c6870;
+
+  @include tablet {
+    fill: #ffffff;
   }
 }
 

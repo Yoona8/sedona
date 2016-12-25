@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="photo">
     <div class="site-wrapper">
@@ -158,15 +158,35 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="menu">
-            <a class="menu__link" href="index.html">#visitsedona</a>
+            <a class="menu__link" href="#">#visitsedona</a>
           </div>
           <div class="social">
-            <a class="social__btn social__btn--tw" href="#">Twitter</a>
-            <a class="social__btn social__btn--fb" href="#">Facebook</a>
-            <a class="social__btn social__btn--yt" href="#">YouTube</a>
+            <a class="social__btn social__btn--tw" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="social__text">Twitter</span>
+            </a>
+            <a class="social__btn social__btn--fb" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <span class="social__text">Facebook</span>
+            </a>
+            <a class="social__btn social__btn--yt" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+              <span class="social__text">YouTube</span>
+            </a>
           </div>
           <div class="developer">
-            <a class="developer__link" href="https://htmlacademy.ru/">Разработано</a>
+            <a class="developer__link" href="https://htmlacademy.ru/">
+              <span class="developer__text">Разработано</span>
+              <svg class="developer__icon" width="27" height="34">
+                <use xlink:href="./img/logo-htmlacademy.svg#Layer_1"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

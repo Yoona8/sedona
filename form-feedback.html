@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="form-feedback">
     <div class="site-wrapper">
@@ -14,13 +14,13 @@
             <button class="nav__toggle" type="button">
               Открыть
               <svg class="nav__burger" width="25" height="25" viewBox="0 0 22.928 21.982">
-                <use xlink:href="./img/icon-menu.svg#burger"></use>
+                <use xlink:href="./img/sprite.svg#icon-menu"></use>
               </svg>
             </button>
             <button class="nav__close" type="button">
               Закрыть
               <svg class="nav__cross" width="25" height="25" viewBox="0 0 22.928 21.982">
-                <use xlink:href="./img/icon-cross.svg#cross"></use>
+                <use xlink:href="./img/sprite.svg#icon-cross"></use>
               </svg>
             </button>
             <ul class="nav__list">
@@ -42,7 +42,9 @@
           </div>
         </nav>
         <div class="logo logo--mobile">
-          <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+          </a>
         </div>
         <div class="intro">
           <h1 class="intro__title visually-hidden">Седона</h1>
@@ -77,7 +79,7 @@
             </section>
             <section class="feedback__item feedback__item--contacts">
               <h3 class="content-title">
-                <div class="content-title__wrapper">Контактная информация:</div>
+                <span class="content-title__wrapper">Контактная информация:</span>
               </h3>
               <div class="feedback__field">
                 <label class="form__label form__label--big" for="tel">Контактный телефон*:</label>
@@ -107,23 +109,39 @@
             </section>
             <section class="feedback__item feedback__item--sights">
               <h3 class="content-title">
-                <div class="content-title__wrapper">Посещенные достопримечательности:</div>
+                <span class="content-title__wrapper">Посещенные достопримечательности:</span>
               </h3>
               <input class="form__input" id="devils-bridge" name="visited-sights" type="checkbox" value="devils-bridge" checked>
-              <label class="form__label" for="devils-bridge">Мост Дьявола</label>
+              <label class="form__label" for="devils-bridge">Мост Дьявола
+                <svg class="form__checkbox-icon" width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
 
               <input class="form__input" id="slide-park" name="visited-sights" type="checkbox" value="slide-park" checked>
-              <label class="form__label" for="slide-park">Слайд-парк</label>
+              <label class="form__label" for="slide-park">Слайд-парк
+                <svg class="form__checkbox-icon" width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
 
               <input class="form__input" id="bell-mountain" name="visited-sights" type="checkbox" value="bell-mountain">
-              <label class="form__label" for="bell-mountain">Гора-Колокол</label>
+              <label class="form__label" for="bell-mountain">Гора-Колокол
+                <svg class="form__checkbox-icon" width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
 
               <input class="form__input" id="red-rocks" name="visited-sights" type="checkbox" value="red-rocks" checked>
-              <label class="form__label" for="red-rocks">Красные скалы</label>
+              <label class="form__label" for="red-rocks">Красные скалы
+                <svg class="form__checkbox-icon" width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
             </section>
             <section class="feedback__item feedback__item--emotions">
-              <h3 for="emotions" class="content-title">
-                <div class="content-title__wrapper">Опишите свои эмоции:</div>
+              <h3 class="content-title">
+                <span class="content-title__wrapper">Опишите свои эмоции:</span>
               </h3>
               <textarea class="form__input" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </section>
@@ -137,15 +155,35 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="menu">
-            <a class="menu__link" href="index.html">#visitsedona</a>
+            <a class="menu__link" href="#">#visitsedona</a>
           </div>
           <div class="social">
-            <a class="social__btn social__btn--tw" href="#">Twitter</a>
-            <a class="social__btn social__btn--fb" href="#">Facebook</a>
-            <a class="social__btn social__btn--yt" href="#">YouTube</a>
+            <a class="social__btn social__btn--tw" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="social__text">Twitter</span>
+            </a>
+            <a class="social__btn social__btn--fb" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <span class="social__text">Facebook</span>
+            </a>
+            <a class="social__btn social__btn--yt" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+              <span class="social__text">YouTube</span>
+            </a>
           </div>
           <div class="developer">
-            <a class="developer__link" href="https://htmlacademy.ru/">Разработано</a>
+            <a class="developer__link" href="https://htmlacademy.ru/">
+              <span class="developer__text">Разработано</span>
+              <svg class="developer__icon" width="27" height="34">
+                <use xlink:href="./img/logo-htmlacademy.svg#Layer_1"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

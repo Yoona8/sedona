@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="index">
     <div class="site-wrapper">
@@ -14,13 +14,13 @@
             <button class="nav__toggle" type="button">
               Открыть
               <svg class="nav__burger" width="25" height="25" viewBox="0 0 22.928 21.982">
-                <use xlink:href="./img/icon-menu.svg#burger"></use>
+                <use xlink:href="./img/sprite.svg#icon-menu"></use>
               </svg>
             </button>
             <button class="nav__close" type="button">
               Закрыть
               <svg class="nav__cross" width="25" height="25" viewBox="0 0 22.928 21.982">
-                <use xlink:href="./img/icon-cross.svg#cross"></use>
+                <use xlink:href="./img/sprite.svg#icon-cross"></use>
               </svg>
             </button>
             <ul class="nav__list">
@@ -74,21 +74,21 @@
         <section class="tips">
           <div class="tips__item tips__item--house">
             <svg class="tips__icon" width="41" height="41">
-              <use xlink:href="./img/icon-house.svg#house"></use>
+              <use xlink:href="./img/sprite.svg#icon-house"></use>
             </svg>
             <h2 class="content-title">Жилье</h2>
             <p class="content-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="tips__item tips__item--gift">
             <svg class="tips__icon" width="41" height="41">
-              <use xlink:href="./img/icon-house.svg#house"></use>
+              <use xlink:href="./img/sprite.svg#icon-gift"></use>
             </svg>
             <h2 class="content-title">Сувениры</h2>
             <p class="content-text">Не только китайского, но и местного производства!</p>
           </div>
           <div class="tips__item tips__item--food">
             <svg class="tips__icon" width="41" height="41">
-              <use xlink:href="./img/icon-house.svg#house"></use>
+              <use xlink:href="./img/sprite.svg#icon-burger"></use>
             </svg>
             <h2 class="content-title">Еда</h2>
             <p class="content-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
@@ -138,12 +138,32 @@
             <a class="menu__link" href="#">#visitsedona</a>
           </div>
           <div class="social">
-            <a class="social__btn social__btn--tw" href="#">Twitter</a>
-            <a class="social__btn social__btn--fb" href="#">Facebook</a>
-            <a class="social__btn social__btn--yt" href="#">YouTube</a>
+            <a class="social__btn social__btn--tw" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="social__text">Twitter</span>
+            </a>
+            <a class="social__btn social__btn--fb" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <span class="social__text">Facebook</span>
+            </a>
+            <a class="social__btn social__btn--yt" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+              <span class="social__text">YouTube</span>
+            </a>
           </div>
           <div class="developer">
-            <a class="developer__link" href="https://htmlacademy.ru/">Разработано</a>
+            <a class="developer__link" href="https://htmlacademy.ru/">
+              <span class="developer__text">Разработано</span>
+              <svg class="developer__icon" width="27" height="34">
+                <use xlink:href="./img/logo-htmlacademy.svg#Layer_1"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

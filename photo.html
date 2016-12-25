@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="photo">
     <div class="site-wrapper">
@@ -14,13 +14,13 @@
             <button class="nav__toggle" type="button">
               Открыть
               <svg class="nav__burger" width="25" height="25" viewBox="0 0 22.928 21.982">
-                <use xlink:href="./img/icon-menu.svg#burger"></use>
+                <use xlink:href="./img/sprite.svg#icon-menu"></use>
               </svg>
             </button>
             <button class="nav__close" type="button">
               Закрыть
               <svg class="nav__cross" width="25" height="25" viewBox="0 0 22.928 21.982">
-                <use xlink:href="./img/icon-cross.svg#cross"></use>
+                <use xlink:href="./img/sprite.svg#icon-cross"></use>
               </svg>
             </button>
             <ul class="nav__list">
@@ -42,7 +42,9 @@
           </div>
         </nav>
         <div class="logo logo--mobile">
-          <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+          </a>
         </div>
         <div class="intro">
           <h1 class="intro__title visually-hidden">Седона</h1>
@@ -73,7 +75,12 @@
                 <h3 class="gallery__title">Неродные просторы</h3>
                 <p class="gallery__author">Автор фото: Борис</p>
                 <div class="gallery__like">
-                  <a class="gallery__like-btn" href="#counter1">Like</a>
+                  <a class="gallery__like-btn" href="#counter1">
+                    <svg class="gallery__like-icon" width="23" height="23">
+                      <use xlink:href="./img/sprite.svg#icon-like"></use>
+                    </svg>
+                    <span class="gallery__like-text">Like</span>
+                  </a>
                   <span class="gallery__like-count" id="counter1">1350</span>
                 </div>
               </div>
@@ -90,7 +97,12 @@
                 <h3 class="gallery__title">Местная растительность</h3>
                 <p class="gallery__author">Автор фото: Сергей</p>
                 <div class="gallery__like">
-                  <a class="gallery__like-btn" href="#counter2">Like</a>
+                  <a class="gallery__like-btn" href="#counter1">
+                    <svg class="gallery__like-icon" width="23" height="23">
+                      <use xlink:href="./img/sprite.svg#icon-like"></use>
+                    </svg>
+                    <span class="gallery__like-text">Like</span>
+                  </a>
                   <span class="gallery__like-count" id="counter2">143</span>
                 </div>
               </div>
@@ -107,7 +119,12 @@
                 <h3 class="gallery__title">Дорога на север</h3>
                 <p class="gallery__author">Автор фото: Петр</p>
                 <div class="gallery__like">
-                  <a class="gallery__like-btn" href="#counter3">Like</a>
+                  <a class="gallery__like-btn" href="#counter1">
+                    <svg class="gallery__like-icon" width="23" height="23">
+                      <use xlink:href="./img/sprite.svg#icon-like"></use>
+                    </svg>
+                    <span class="gallery__like-text">Like</span>
+                  </a>
                   <span class="gallery__like-count" id="counter3">96</span>
                 </div>
               </div>
@@ -124,7 +141,12 @@
                 <h3 class="gallery__title">Мост дьявола</h3>
                 <p class="gallery__author">Автор фото: Антон</p>
                 <div class="gallery__like">
-                  <a class="gallery__like-btn" href="#counter4">Like</a>
+                  <a class="gallery__like-btn" href="#counter1">
+                    <svg class="gallery__like-icon" width="23" height="23">
+                      <use xlink:href="./img/sprite.svg#icon-like"></use>
+                    </svg>
+                    <span class="gallery__like-text">Like</span>
+                  </a>
                   <span class="gallery__like-count" id="counter4">254</span>
                 </div>
               </div>
@@ -148,9 +170,21 @@
                 <div class="video__controls-bar"></div>
                 <div class="video__controls-scroll"></div>
               </div>
-              <button class="video__btn video__btn--repeat" type="button">Repeat</button>
-              <button class="video__btn video__btn--source" type="button">To source</button>
-              <button class="video__btn video__btn--full" type="button">Full screen</button>
+              <button class="video__btn video__btn--repeat" type="button">Repeat
+                <svg class="video__icon" width="18" height="22">
+                  <use xlink:href="./img/sprite.svg#icon-video-replay"></use>
+                </svg>
+              </button>
+              <button class="video__btn video__btn--sub" type="button">To source
+                <svg class="video__icon" width="34" height="21">
+                  <use xlink:href="./img/sprite.svg#icon-video-subtitles"></use>
+                </svg>
+              </button>
+              <button class="video__btn video__btn--full" type="button">Full screen
+                <svg class="video__icon" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#icon-video-fullscreen"></use>
+                </svg>
+              </button>
             </div>
           </div>
       </section>
@@ -158,15 +192,35 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="menu">
-            <a class="menu__link" href="index.html">#visitsedona</a>
+            <a class="menu__link" href="#">#visitsedona</a>
           </div>
           <div class="social">
-            <a class="social__btn social__btn--tw" href="#">Twitter</a>
-            <a class="social__btn social__btn--fb" href="#">Facebook</a>
-            <a class="social__btn social__btn--yt" href="#">YouTube</a>
+            <a class="social__btn social__btn--tw" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="social__text">Twitter</span>
+            </a>
+            <a class="social__btn social__btn--fb" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <span class="social__text">Facebook</span>
+            </a>
+            <a class="social__btn social__btn--yt" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+              <span class="social__text">YouTube</span>
+            </a>
           </div>
           <div class="developer">
-            <a class="developer__link" href="https://htmlacademy.ru/">Разработано</a>
+            <a class="developer__link" href="https://htmlacademy.ru/">
+              <span class="developer__text">Разработано</span>
+              <svg class="developer__icon" width="27" height="34">
+                <use xlink:href="./img/logo-htmlacademy.svg#Layer_1"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

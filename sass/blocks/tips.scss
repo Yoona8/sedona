@@ -30,9 +30,12 @@
   left: 20px;
   width: 41px;
   height: 41px;
+  fill: $bg-blue;
 
   @include tablet {
     position: static;
+    width: 80px;
+    height: 80px;
     margin-bottom: 28px;
   }
 }

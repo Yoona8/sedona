@@ -4,10 +4,29 @@
 }
 
 .developer__link {
+  display: flex;
+  align-items: center;
   color: #000000;
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    .developer__text {
+      text-decoration: underline;
+    }
+
+    .developer__icon {
+      fill: $bg-blue;
+    }
   }
+
+  &:active {
+    .developer__icon {
+      fill: #b2b2b2;
+    }
+  }
+}
+
+.developer__icon {
+  margin-left: 10px;
+  fill: #000000;
 }

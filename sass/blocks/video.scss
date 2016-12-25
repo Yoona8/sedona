@@ -131,8 +131,27 @@
   cursor: pointer;
   outline: none;
 
+  &--repeat {
+    .video__icon {
+      width: 18px;
+      height: 22px;
+    }
+  }
+
   &--sub {
     margin-left: auto;
+
+    .video__icon {
+      width: 34px;
+      height: 21px;
+    }
+  }
+
+  &--full {
+    .video__icon {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &:hover {

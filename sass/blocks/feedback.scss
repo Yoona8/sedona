@@ -181,7 +181,7 @@
   .form__input {
     margin-left: 0;
     width: 100%;
-    box-sizing: border-box;
+    padding-right: 58px;
 
     @include desktop {
       width: 318px;

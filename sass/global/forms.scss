@@ -134,7 +134,6 @@
   top: 50%;
   width: 22px;
   height: 22px;
-  background: url('../img/sprite.svg#icon-tick') no-repeat center;
   transform: translateY(-50%);
 }
 
@@ -153,6 +152,23 @@
 
 .form__input-wrapper {
   position: relative;
+}
+
+.form__input-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+
+.form__input-svg {
+  width: 18px;
+  height: 18px;
 }
 
 .form__mistake {

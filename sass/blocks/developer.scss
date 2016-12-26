@@ -10,10 +10,6 @@
   text-decoration: none;
 
   &:hover {
-    .developer__text {
-      text-decoration: underline;
-    }
-
     .developer__icon {
       fill: $bg-blue;
     }
@@ -27,6 +23,8 @@
 }
 
 .developer__icon {
+  width: 27px;
+  height: 34px;
   margin-left: 10px;
   fill: #000000;
 }

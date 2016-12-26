@@ -6,6 +6,7 @@
   position: absolute;
   top: 100%;
   width: 100%;
+  max-height: 40px;
   fill: #ffffff;
 
   @include tablet {
@@ -14,24 +15,32 @@
 }
 
 .title__wrapper {
-  padding: 40px 20px 22px;
+  padding: 42px 20px 21px;
 
   @include tablet {
     max-width: 560px;
-    padding-bottom: 30px;
+    padding: 47px 20px 40px;
     margin: 0 auto;
   }
 }
 
 // content-title styles for title block
 .title .content-title {
-  margin-bottom: 30px;
+  max-width: 275px;
+  margin: 0 auto 30px;
+
+  @include tablet {
+    max-width: none;
+  }
+}
+
+.title .content-text {
+  line-height: 1.8;
 }
 
 // attractions styles after title block
-
 .title + .attractions {
-  padding-top: 16px;
+  padding-top: 13px;
 
   @include tablet {
     padding-top: 0;

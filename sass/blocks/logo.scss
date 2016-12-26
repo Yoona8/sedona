@@ -22,6 +22,21 @@
   }
 }
 
+.logo--mobile .logo__img {
+  width: 102px;
+  height: 83px;
+}
+
+.logo--tablet .logo__img {
+  width: 102px;
+  height: 83px;
+}
+
+.logo--desktop .logo__img {
+  width: 188px;
+  height: 96px;
+}
+
 .logo__img {
   position: relative;
   z-index: 1;

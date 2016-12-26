@@ -20,11 +20,24 @@
     }
   }
 
+  .title .content-title {
+    @include tablet {
+      margin-bottom: 22px;
+      font-size: 3rem;
+    }
+  }
+
   .title__wrapper {
-    padding-bottom: 1px;
+    padding-bottom: 7px;
 
     @include tablet {
-      padding-bottom: 22px;
+      padding-top: 67px;
+      padding-bottom: 36px;
+    }
+
+    @include desktop {
+      padding-top: 106px;
+      padding-bottom: 21px;
     }
   }
 }

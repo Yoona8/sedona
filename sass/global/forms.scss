@@ -1,4 +1,5 @@
 .form__input {
+  width: 100%;
   padding: 12px 16px;
   font-weight: 700;
   font-size: 1.8rem;
@@ -9,6 +10,7 @@
   background-color: #f2f2f2;
   outline: none;
   resize: none;
+  box-sizing: border-box;
 
   &:hover {
     background-color: #e5e5e5;
@@ -27,7 +29,7 @@
 .form__input[type="radio"] + .form__label {
   position: relative;
   display: block;
-  padding: 25px 0 25px 80px;
+  padding: 22px 0 22px 80px;
   font-weight: 700;
   font-size: 1.8rem;
   text-transform: none;
@@ -51,6 +53,10 @@
 
   &:active::before {
     background-color: #d5d5d5;
+  }
+
+  @include tablet {
+    padding: 25px 0 25px 80px;
   }
 }
 
@@ -115,6 +121,10 @@
   &:active::before {
     background-color: #d5d5d5;
   }
+
+  @include tablet {
+    padding: 28px 5px 28px 80px;
+  }
 }
 
 .form__checkbox-icon {
@@ -124,7 +134,6 @@
   top: 50%;
   width: 22px;
   height: 22px;
-  background: url('../img/sprite.svg#icon-tick') no-repeat center;
   transform: translateY(-50%);
 }
 
@@ -145,11 +154,28 @@
   position: relative;
 }
 
+.form__input-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+
+.form__input-svg {
+  width: 18px;
+  height: 18px;
+}
+
 .form__mistake {
   position: absolute;
   top: 100%;
   left: 20px;
-  padding-top: 5px;
+  padding-top: 7px;
   max-width: 320px;
   text-transform: none;
   color: #ff5c5c;

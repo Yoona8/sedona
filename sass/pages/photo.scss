@@ -20,9 +20,23 @@
     }
   }
 
+  .title__wrapper {
+    @include tablet {
+      padding: 66px 20px 61px;
+    }
+
+    @include desktop {
+      padding-top: 103px;
+    }
+  }
+
   @include tablet {
     .title .content-title {
       font-size: 3rem;
     }
+  }
+
+  .content-title {
+    margin-bottom: 25px;
   }
 }

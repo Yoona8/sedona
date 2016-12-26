@@ -1,10 +1,10 @@
 .intro {
   position: relative;
-  height: 388px;
+  height: 157px;
   background-color: $bg-blue;
   background-image: url('../img/text-sedona.svg'), url('../img/bg-back-mobile@1x.jpg');
   background-position: center;
-  background-size: 285px auto, cover;
+  background-size: 226px auto, cover;
   background-repeat: no-repeat;
 
   @include retina {

@@ -1,19 +1,27 @@
 .video {
-  padding-bottom: 66px;
+  padding-bottom: 104px;
 
   @include tablet {
     padding-bottom: 40px;
     margin: 0 auto;
   }
+
+  @include desktop {
+    padding-bottom: 85px;
+  }
 }
 
 .video__wrapper {
-  padding: 60px 20px 20px;
+  padding: 32px 20px 28px;
   max-width: 480px;
   margin: 0 auto;
 
   @include tablet {
-    padding-bottom: 55px;
+    padding: 58px 20px 62px;
+  }
+
+  @include desktop {
+    padding-top: 62px;
   }
 }
 

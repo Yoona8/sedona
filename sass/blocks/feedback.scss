@@ -12,7 +12,7 @@
 
 .feedback__item {
   position: relative;
-  padding: 20px;
+  padding: 18px 20px 5px;
 
   &::before {
     content: '';
@@ -49,6 +49,8 @@
   }
 
   .content-title {
+    margin-bottom: 25px;
+
     @include tablet {
       position: relative;
 
@@ -69,6 +71,7 @@
     @include tablet {
       position: relative;
       z-index: 1;
+      display: inline-block;
       max-width: 300px;
       padding: 0 50px;
       margin: 0 auto;
@@ -89,14 +92,44 @@
 }
 
 .feedback__item--intro {
+  position: relative;
+
+  @include tablet {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 28px;
+      bottom: 28px;
+      width: 1px;
+      background-color: #000000;
+      opacity: 0.1;
+    }
+  }
+
   .content-title {
     @include tablet {
-      margin-bottom: 62px;
+      padding-left: 60px;
+      margin-bottom: 57px;
       text-align: left;
 
       &::before {
         display: none;
       }
+    }
+
+    @include desktop {
+      padding-left: 80px;
+    }
+  }
+
+  .form__label {
+    @include tablet {
+      padding-left: 60px;
+    }
+
+    @include desktop {
+      padding-left: 80px;
     }
   }
 }
@@ -104,19 +137,29 @@
 .feedback__item--contacts {
   padding-bottom: 10px;
 
+  @include tablet {
+    padding-top: 22px;
+  }
+
   @include desktop {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 1px;
   }
 
   .feedback__field {
     flex-direction: column;
     align-items: stretch;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 18px;
+    }
 
     @include tablet {
+      margin-bottom: 26px;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -124,6 +167,7 @@
 
     @include desktop {
       align-items: center;
+      margin-bottom: 18px;
     }
   }
 
@@ -179,9 +223,13 @@
 }
 
 .feedback__item--impression {
+  padding-bottom: 18px;
+
   .content-title {
+    margin-bottom: 15px;
+
     @include tablet {
-      margin-bottom: 50px;
+      margin-bottom: 48px;
       text-align: left;
 
       &::before {
@@ -196,18 +244,25 @@
 }
 
 .feedback__item--sights {
+  padding-bottom: 21px;
+
   @include tablet {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 26px;
   }
 
   @include desktop {
     justify-content: space-between;
+    padding-bottom: 23px;
   }
 
   .content-title {
+    margin-bottom: 12px;
+
     @include tablet {
+      margin-bottom: 25px;
       flex-basis: 100%;
     }
   }
@@ -223,8 +278,14 @@
 
 .feedback__item--emotions {
   .content-title {
+    margin-bottom: 18px;
+
     @include tablet {
       margin-bottom: 60px;
+    }
+
+    @include desktop {
+      margin-bottom: 56px;
     }
   }
 
@@ -245,10 +306,20 @@
 }
 
 .feedback__item--button {
+  padding-top: 41px;
+  padding-bottom: 37px;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 21px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 66px;
   }
 
   .btn--feedback {

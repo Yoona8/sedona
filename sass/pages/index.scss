@@ -2,6 +2,7 @@
   .intro {
     height: 388px;
     background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-mobile@1x.jpg');
+    background-size: 285px auto, cover;
 
     @include retina {
       background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-mobile@2x.jpg');
@@ -10,6 +11,7 @@
     @include tablet {
       height: 520px;
       background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-tablet@1x.jpg');
+      background-size: 461px auto, cover;
 
       @include retina {
         background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-tablet@2x.jpg');

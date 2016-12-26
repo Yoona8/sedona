@@ -8,6 +8,7 @@
     }
 
     @include tablet {
+      height: 520px;
       background-image: url('../img/text-sedona-index.svg'), url('../img/bg-back-tablet@1x.jpg');
 
       @include retina {

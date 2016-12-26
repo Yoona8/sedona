@@ -6,22 +6,33 @@
     max-width: 460px;
     margin: 0 auto;
   }
+
+  @include desktop {
+    padding-bottom: 66px;
+  }
 }
 
 // content-title styles for search block
 .search .content-title {
+  margin-bottom: 17px;
   font-size: 2.1rem;
   line-height: 1.24;
 
   @include tablet {
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 
 // btn styles for search block
 .search .btn--search {
+  margin-top: 32px;
+
   @include tablet {
     margin-top: 40px;
+  }
+
+  @include desktop {
+    margin-top: 45px;
   }
 }

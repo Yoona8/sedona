@@ -10,10 +10,6 @@
   text-decoration: none;
 
   &:hover {
-    .developer__text {
-      text-decoration: underline;
-    }
-
     .developer__icon {
       fill: $bg-blue;
     }

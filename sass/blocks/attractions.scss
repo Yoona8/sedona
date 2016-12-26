@@ -8,6 +8,10 @@
     .attractions__item::after {
       display: none;
     }
+
+    .attractions__item {
+      padding: 42px 20px 29px;
+    }
   }
 
   @include tablet {
@@ -17,7 +21,7 @@
 
 .attractions__item {
   position: relative;
-  padding: 42px 20px 22px;
+  padding: 28px 20px 17px;
   flex: 1;
 
   &::after {
@@ -36,10 +40,14 @@
   }
 
   @include tablet {
-    padding: 42px 0 22px;
+    padding: 39px 0 33px;
     &::after {
       display: none;
     }
+  }
+
+  @include desktop {
+    padding-bottom: 57px;
   }
 }
 

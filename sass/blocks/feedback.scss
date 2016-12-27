@@ -147,7 +147,6 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-bottom: 1px;
   }
 
   .feedback__field {
@@ -175,7 +174,7 @@
   .content-title {
     @include desktop {
       flex-basis: 100%;
-      margin-bottom: 75px;
+      margin-bottom: 70px;
     }
   }
 

@@ -40,10 +40,18 @@
 
     &:nth-child(2n+3) {
       background-color: #eaeaea;
+
+      .gallery__description-wrapper {
+        padding: 17px 37px 17px 20px;
+      }
     }
 
     &:first-child {
       flex-basis: 100%;
+
+      .gallery__description-wrapper {
+        padding: 17px 20px;
+      }
 
       .gallery__pic {
         width: 648px;
@@ -125,7 +133,7 @@
 
 .gallery__description-wrapper {
   @include tablet {
-    padding: 9px 20px;
+    padding: 17px 28px 17px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,6 +183,7 @@
 
 .gallery__like-btn {
   font-size: 0;
+  margin-right: 10px;
 }
 
 .gallery__like-icon {
@@ -193,7 +202,6 @@
 }
 
 .gallery__like-count {
-  margin-left: 15px;
   padding-top: 5px;
   font-weight: 700;
   line-height: 1.1;

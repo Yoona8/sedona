@@ -139,6 +139,7 @@
 
   @include tablet {
     padding-top: 22px;
+    padding-bottom: 5px;
   }
 
   @include desktop {
@@ -247,15 +248,33 @@
   padding-bottom: 21px;
 
   @include tablet {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     padding-bottom: 26px;
   }
 
   @include desktop {
-    justify-content: space-between;
     padding-bottom: 23px;
+  }
+
+  .feedback__form-fields-wrapper {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 73px 0 95px;
+
+      .form__label:nth-of-type(2) {
+        order: 2;
+      }
+
+      .form__label:nth-of-type(4) {
+        order: 4;
+      }
+    }
+
+    @include desktop {
+      padding: 0;
+    }
   }
 
   .content-title {

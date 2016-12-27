@@ -10,7 +10,12 @@
   align-items: center;
 
   @include tablet {
-    justify-content: space-around;
+    padding: 18px 60px;
+    justify-content: space-between;
     flex-direction: row;
+  }
+
+  @include desktop {
+    padding: 18px 0;
   }
 }

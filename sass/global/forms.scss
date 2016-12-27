@@ -123,7 +123,11 @@
   }
 
   @include tablet {
-    padding: 28px 5px 28px 80px;
+    padding: 29px 5px 29px 80px;
+  }
+
+  @include desktop {
+    min-width: 100px;
   }
 }
 

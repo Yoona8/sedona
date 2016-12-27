@@ -1,6 +1,11 @@
 .developer {
-  padding: 18px 0;
+  padding: 22px 0 18px;
   text-align: center;
+
+  @include tablet {
+    padding: 18px 0;
+    flex: 1;
+  }
 }
 
 .developer__link {
@@ -19,6 +24,14 @@
     .developer__icon {
       fill: #b2b2b2;
     }
+  }
+
+  @include tablet {
+    justify-content: flex-end;
+  }
+
+  @include desktop {
+    padding: 0 44px 0 20px;
   }
 }
 

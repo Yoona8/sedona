@@ -11,6 +11,10 @@
 
     .attractions__item {
       padding: 42px 20px 29px;
+
+      @include desktop {
+        padding-top: 51px;
+      }
     }
   }
 
@@ -40,7 +44,7 @@
   }
 
   @include tablet {
-    padding: 39px 0 33px;
+    padding: 39px 0 36px;
     &::after {
       display: none;
     }
@@ -79,6 +83,10 @@
   }
 
   @include tablet {
+    min-width: 512px;
+    height: unset;
+    min-height: 257px;
+
     &--city {
       background-image: url('../img/photo-city-tablet@1x.jpg');
     }
@@ -100,6 +108,8 @@
   }
 
   @include desktop {
+    min-width: 800px;
+
     &--city {
       background-image: url('../img/photo-city@1x.jpg');
     }
@@ -131,8 +141,7 @@
   @include tablet {
     max-width: 160px;
     padding: 0 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 5px;
   }
 }
 
@@ -141,8 +150,12 @@
   @include tablet {
     max-width: 180px;
     padding: 0 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 17px;
+    line-height: 1.7;
+
+    &:last-child {
+      margin-bottom: 6px;
+    }
   }
 
   @include desktop {

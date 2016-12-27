@@ -89,6 +89,7 @@
     bottom: 0;
     left: 60px;
     right: 60px;
+    padding: 0 20px 0 11px;
     background: rgba(#000000, 0.6);
   }
 }
@@ -140,6 +141,8 @@
   outline: none;
 
   &--repeat {
+    width: 64px;
+
     .video__icon {
       width: 18px;
       height: 22px;

@@ -2,6 +2,10 @@
   padding: 18px 0;
   font-size: 0;
   text-align: center;
+
+  @include tablet {
+    flex: 1;
+  }
 }
 
 .social__btn {

@@ -3,8 +3,6 @@
 Проект создан в рамках обучения на интенсивном онлайн-курсе 
 «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-Демо-версия доступна по адресу: http://test.koboweb.net/sedona/
-
 ## Технологии
 
 - Git

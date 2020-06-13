@@ -135,13 +135,20 @@
   height: auto;
 }
 
-
 // content-title styles for attractions block
 .attractions .content-title {
+  br {
+    display: none;
+  }
+
   @include tablet {
-    max-width: 160px;
+    max-width: 185px;
     padding: 0 20px;
     margin: 0 auto 5px;
+
+    br {
+      display: block;
+    }
   }
 }
 

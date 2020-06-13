@@ -47,26 +47,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../img/video-mobile@1x.jpg');
+  background-image: url('assets/img/video-mobile@1x.jpg');
 
   @include retina {
-    background-image: url('../img/video-mobile@2x.jpg');
+    background-image: url('assets/img/video-mobile@2x.jpg');
   }
 
   @include tablet {
     height: 500px;
-    background-image: url('../img/video-tablet@1x.jpg');
+    background-image: url('assets/img/video-tablet@1x.jpg');
 
     @include retina {
-      background-image: url('../img/video-tablet@2x.jpg');
+      background-image: url('assets/img/video-tablet@2x.jpg');
     }
   }
 
   @include desktop {
-    background-image: url('../img/video-desktop@1x.jpg');
+    background-image: url('assets/img/video-desktop@1x.jpg');
 
     @include retina {
-      background-image: url('../img/video-desktop@2x.jpg');
+      background-image: url('assets/img/video-desktop@2x.jpg');
     }
   }
 }

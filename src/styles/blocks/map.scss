@@ -1,0 +1,27 @@
+.map {
+  height: 350px;
+  background-color: #cbe0a4;
+  background-image: url('assets/img/bg-map-mobile@1x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url('assets/img/bg-map-mobile@2x.jpg');
+  }
+
+  @include tablet {
+    background-image: url('assets/img/bg-map-tablet@1x.jpg');
+
+    @include retina {
+      background-image: url('assets/img/bg-map-tablet@2x.jpg');
+    }
+  }
+
+  @include desktop {
+    background-image: url('assets/img/bg-map-desktop@1x.jpg');
+
+    @include retina {
+      background-image: url('assets/img/bg-map-desktop@2x.jpg');
+    }
+  }
+}

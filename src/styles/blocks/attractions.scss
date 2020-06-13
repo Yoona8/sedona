@@ -64,21 +64,21 @@
 
   &--city {
     background-color: #a9b5a5;
-    background-image: url('../img/photo-city-mobile@1x.jpg');
+    background-image: url('assets/img/photo-city-mobile@1x.jpg');
   }
 
   &--bridge {
     background-color: #e8c4a9;
-    background-image: url('../img/photo-bridge-mobile@1x.jpg');
+    background-image: url('assets/img/photo-bridge-mobile@1x.jpg');
   }
 
   @include retina {
     &--city {
-      background-image: url('../img/photo-city-mobile@2x.jpg');
+      background-image: url('assets/img/photo-city-mobile@2x.jpg');
     }
 
     &--bridge {
-      background-image: url('../img/photo-bridge-mobile@2x.jpg');
+      background-image: url('assets/img/photo-bridge-mobile@2x.jpg');
     }
   }
 
@@ -88,21 +88,21 @@
     min-height: 257px;
 
     &--city {
-      background-image: url('../img/photo-city-tablet@1x.jpg');
+      background-image: url('assets/img/photo-city-tablet@1x.jpg');
     }
 
     &--bridge {
       order: -1;
-      background-image: url('../img/photo-bridge-tablet@1x.jpg');
+      background-image: url('assets/img/photo-bridge-tablet@1x.jpg');
     }
 
     @include retina {
       &--city {
-        background-image: url('../img/photo-city-tablet@2x.jpg');
+        background-image: url('assets/img/photo-city-tablet@2x.jpg');
       }
 
       &--bridge {
-        background-image: url('../img/photo-bridge-tablet@2x.jpg');
+        background-image: url('assets/img/photo-bridge-tablet@2x.jpg');
       }
     }
   }
@@ -111,20 +111,20 @@
     min-width: 800px;
 
     &--city {
-      background-image: url('../img/photo-city@1x.jpg');
+      background-image: url('assets/img/photo-city@1x.jpg');
     }
 
     &--bridge {
-      background-image: url('../img/photo-bridge@1x.jpg');
+      background-image: url('assets/img/photo-bridge@1x.jpg');
     }
 
     @include retina {
       &--city {
-        background-image: url('../img/photo-city@2x.jpg');
+        background-image: url('assets/img/photo-city@2x.jpg');
       }
 
       &--bridge {
-        background-image: url('../img/photo-bridge@2x.jpg');
+        background-image: url('assets/img/photo-bridge@2x.jpg');
       }
     }
   }

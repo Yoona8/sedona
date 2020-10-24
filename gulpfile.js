@@ -16,7 +16,7 @@ let paths = {
   htmlSrc: 'src/*.html',
   jsSrc: 'src/scripts/*.js',
   assetsSrc: 'src/assets/**/*.*',
-  buildDest: 'build/',
+  buildDest: 'docs/',
 };
 
 gulp.task('clean', function (done) {
